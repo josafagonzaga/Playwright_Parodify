@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "editor.glyphMargin": true,
+    "editor.codeLens": true,
+    "testing.gutterEnabled": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-playwright.playwright",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+    ],
+  },
+}

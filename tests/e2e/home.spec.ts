@@ -40,6 +40,19 @@ test.describe('Home', () => {
     await homePage.expectSongHidden('Nice Bugs Finish Devs');
   });
 
+  test('deve buscar musicas por parte do nome', async ({ page }) => {
+    const homePage = new HomePage(page);
+
+    await homePage.open();
+    await homePage.expectLoaded();
+
+    await homePage.searchSong('Bug');
+
+    await homePage.expectSongVisible('Bughium');
+    await homePage.expectSongVisible('Nice Bugs Finish Devs');
+    await homePage.expectSongHidden('Symphony of Production');
+  });
+
   test('deve manter a aparencia visual da pagina inicial @visual', async ({
     page,
   }) => {

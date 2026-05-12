@@ -32,6 +32,7 @@ tests/
 - Acesso a pagina inicial do Parodify
 - Busca de musica pelo nome
 - Busca de musica inexistente exibindo lista vazia
+- Busca parcial de musicas
 - Validacao visual da pagina inicial
 - Validacao visual do menu lateral
 - Validacao visual da barra superior
