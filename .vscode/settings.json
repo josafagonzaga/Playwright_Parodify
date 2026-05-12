@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.validate": ["typescript"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeLens": true,
+  "testing.gutterEnabled": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
