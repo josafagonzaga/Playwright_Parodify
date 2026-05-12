@@ -40,7 +40,9 @@ test.describe('Home', () => {
     await homePage.expectSongHidden('Nice Bugs Finish Devs');
   });
 
-  test('deve manter a aparencia visual da pagina inicial', async ({ page }) => {
+  test('deve manter a aparencia visual da pagina inicial @visual', async ({
+    page,
+  }) => {
     const homePage = new HomePage(page);
 
     await homePage.open();
@@ -52,7 +54,9 @@ test.describe('Home', () => {
     });
   });
 
-  test('deve manter a aparencia visual do menu lateral', async ({ page }) => {
+  test('deve manter a aparencia visual do menu lateral @visual', async ({
+    page,
+  }) => {
     const homePage = new HomePage(page);
 
     await homePage.open();
@@ -69,7 +73,9 @@ test.describe('Home', () => {
     });
   });
 
-  test('deve manter a aparencia visual da barra superior', async ({ page }) => {
+  test('deve manter a aparencia visual da barra superior @visual', async ({
+    page,
+  }) => {
     const homePage = new HomePage(page);
 
     await homePage.open();
@@ -86,7 +92,7 @@ test.describe('Home', () => {
     });
   });
 
-  test('deve manter a aparencia visual do player', async ({ page }) => {
+  test('deve manter a aparencia visual do player @visual', async ({ page }) => {
     const homePage = new HomePage(page);
 
     await homePage.open();

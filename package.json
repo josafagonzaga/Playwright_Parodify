@@ -4,6 +4,8 @@
   "description": "Projeto de automacao E2E com Playwright e TypeScript para o Parodify.",
   "scripts": {
     "test": "playwright test",
+    "test:functional": "playwright test --grep-invert @visual",
+    "test:visual": "playwright test --grep @visual",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "report": "playwright show-report",
@@ -12,7 +14,7 @@
     "format:check": "prettier . --check",
     "typecheck": "tsc --noEmit",
     "quality": "npm run format:check && npm run lint && npm run typecheck",
-    "ci": "npm run quality && npm test"
+    "ci": "npm run quality && npm run test:functional"
   },
   "keywords": [
     "playwright",

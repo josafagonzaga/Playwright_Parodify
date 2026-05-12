@@ -57,6 +57,18 @@ Execute todos os testes:
 npm test
 ```
 
+Execute somente testes funcionais:
+
+```bash
+npm run test:functional
+```
+
+Execute somente testes visuais:
+
+```bash
+npm run test:visual
+```
+
 Execute em modo headed:
 
 ```bash
@@ -95,7 +107,7 @@ Validar TypeScript:
 npm run typecheck
 ```
 
-Executar todas as validacoes locais principais:
+Executar todas as validacoes locais principais usadas no CI:
 
 ```bash
 npm run ci
@@ -125,8 +137,10 @@ npx playwright install --with-deps chromium
 npm run format:check
 npm run lint
 npm run typecheck
-npm test
+npm run test:functional
 ```
+
+Os testes visuais ficam disponíveis localmente via `npm run test:visual`. Eles nao rodam no CI inicial para evitar falhas por diferencas de renderizacao de screenshot entre ambientes.
 
 O relatorio HTML do Playwright e salvo como artifact do workflow.
 
